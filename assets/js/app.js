@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   const typingText = function(index = 0) {
     setTimeout(function() {
-      const text = "Junior Web Developer";
+      const text = "Junior Web Developer.";
 
       if (text.length >= index) {
         $('#typingText').append(text.charAt(index));
@@ -17,7 +17,7 @@ $(document).ready(function(){
         typingText(++index);
       }
     }, 100);
-  }
+  };
   typingText();
 
   $('#currentYear').text(new Date().getFullYear());
